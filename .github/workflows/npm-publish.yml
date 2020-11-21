@@ -21,18 +21,18 @@ jobs:
       - run: flutter pub get
       - run: flutter build web --release
         # 1. change path which exist lib/main.dart
-        working-directory: ./example_macos
+        working-directory: ./uviewer
       - run: |
           # 2. change path to [existed lib/main.dart path]/build/web
-          cd example_macos/build/web
+          cd uviewer/web
           git init
            # 3. change your email
-          git config --global user.email rlawjdxo1212@naver.com
+          git config --global user.email buelmanager@gmail.com
           # 4. change your name
-          git config --global user.name origogi
+          git config --global user.name buelmanager
           git status
           # 5. change your repository
-          git remote add origin https://$@github.com/Origogi/Vertical_Card_Pager.git 
+          git remote add origin https://github.com/buelmanager/uviewer.github.io.git 
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
