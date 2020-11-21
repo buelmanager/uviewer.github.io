@@ -32,7 +32,7 @@ jobs:
           git config --global user.name buelmanager
           git status
           # 5. change your repository
-          git remote add origin https://github.com/buelmanager/uviewer.github.io.git 
+          git remote add origin https://buelmanager:wonchulhee11!!@github.com/buelmanager/uviewer.github.io.git 
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
