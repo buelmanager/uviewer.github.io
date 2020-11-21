@@ -24,7 +24,7 @@ jobs:
         working-directory: ./uviewer
       - run: |
           # 2. change path to [existed lib/main.dart path]/build/web
-          cd uviewer/web
+          cd uviewer/build/web
           git init
            # 3. change your email
           git config --global user.email buelmanager@gmail.com
